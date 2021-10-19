@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://kit.fontawesome.com/64d5Befce2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="login.css">
+  <title>Registration and login </title>
+</head>
+
+<body onload="initClock()">
+
+  <div class="bg-img">
+
+    <div class="content">
+      <div class="datetime">
+        <div class="date">
+          <span id="day">Day</span>,
+          <span id="month">Month</span>
+          <span id="num">00</span>,
+          <span id="year">Year</span>
+        </div>
+        <div class="time">
+          <span id="hour">00</span>:
+          <span id="min">00</span>:
+          <span id="seconds">00</span>
+          <span id="period">AM</span>
+        </div>
+      </div>
+      <header>Login Form</header>
+
+      <form action="#">
+        <div class="field">
+          <span class="fa fa-user"></span>
+          <input type="text" placeholder="Email or Phone" required>
+        </div>
+        <div class="field space">
+          <span class="fa fa-lock"></span>
+          <input class="password" type="password" placeholder="Password" required>
+          <span class="show">SHOW</span>
+        </div>
+        <div class="pass">
+          <em><a href="#">Forgot password</a></em>
+        </div>
+        <div class="field">
+          <input type="submit" value="Login">
+        </div>
+
+        <div class="login"><em>Or login with</em></div>
+        <div class="link">
+          <a href="#" class="fb">
+            <i class="fab fa-facebook-f"><span>Facebook</span></i>
+          </a>
+          <a href="#" class="google">
+            <i class="fab fa-google"><span>Google</span></i>
+          </a>
+          <a href="#" class="yahoo">
+            <i class="fab fa-yahoo"><span>Yahoo</span></i>
+          </a>
+        </div>
+        <div class="signup space">
+          <em>
+            Don't have an account? <a href="signup.html">Signup Now</a>
+          </em>
+        </div>
+      </form>
+
+      <div class="sign space">
+        <span>Kelvin Bernald <a href="#">Technophile</a></span>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <script src="login.js"></script>
+</body>
+
+</html>

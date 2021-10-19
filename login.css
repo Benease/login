@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+/*font-family: 'Oxygen', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;*/
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bg-img{
+  background: url('bg.png');
+  height: 110vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-img:after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 110%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 370px;
+  text-align: center;
+  z-index: 999;
+  text-align: center;
+  padding: 60px 32px;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+.content header{
+  color: #fff;
+  font-size: 33px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/***date****/
+.datetime{
+  color: rgba(179, 173, 173, 0.94);
+  /* border: 1px solid rgb(255, 255,255, 0.94); */
+  margin-bottom: 25px;
+  -webkit-box-reflect:below 1px linear-gradient(transparent, rgba(255,255,255,0.1)) ;
+}
+
+.down{
+  margin-bottom: 60px;
+}
+
+.datetime:hover{
+  background: #27aae1;
+  color: #fff;
+  box-shadow: 0 0 30px #27aae1;
+}
+
+.date{
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.time{
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time span:not(:last-child){
+  position: relative;
+  margin: 0 6px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.time span:last-child{
+  color: #fff;
+  background: #27aae1;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 5px;
+  padding: 0 5px;
+  border-radius: 10px;
+}
+
+.field{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background: rgba(255, 255, 255, 0.94);
+}
+
+.field span{
+  color: #222;
+  width: 40px;
+  line-height: 45px;
+}
+
+.field input{
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #222;
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.show{
+  position: absolute;
+  right: 13px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+  cursor: pointer;
+  display: none;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.password:valid ~ .show{
+  display: block;
+}
+
+.space{
+  margin-top: 16px;
+}
+
+.pass{
+  text-align: left;
+  margin: 10px 0;
+}
+
+.pass a{
+  color: #fff;
+  font-family: 'Oxygen', sans-serif;
+  text-decoration: none;
+}
+
+.pass a:hover{
+  text-decoration: underline;
+}
+
+input[type="submit"]{
+  font-weight: bolder;
+  text-transform: uppercase;
+  background: #27aae1;
+  border: 1px solid #2691d9;
+  font-size: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;  
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+input[type="submit"]:hover{
+  color: #fff;
+  background: #2691d9;
+}
+
+.login{
+  color: #fff;
+  margin: 20px 0;
+  font-family: 'Oxygen', sans-serif;
+}
+
+
+/* .link i{
+  display: flex;
+  cursor: pointer;
+  color: #fff;
+  margin: 0 0 20px 0;
+} */
+
+.fb i, .google i, .yahoo i{
+  /* display: flex; */
+  /* width: 100%; */
+  height: 22px;
+  line-height: 25px;
+  margin-top: 5px;
+  cursor: pointer;
+  color: lightgray;
+  padding: 0px 5px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+}
+
+.fb i{
+  margin-left: 0px;
+}
+
+ .google i, .yahoo i{
+  margin-left: 7px;
+}
+
+.fb i:hover, .google i:hover, .yahoo i:hover{
+  color: #fff;
+  border: 1px solid lightgray;
+}
+
+.link span{
+  font-size: 12px;
+  margin-left: 8px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.signup{
+  color: white;
+  font-size: 15px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.signup a{
+  color: #27aae1;
+  text-decoration: none;
+}
+
+.signup a:hover{
+  text-decoration: underline;
+}
+
+
+.sign{
+  color: lightgray;
+  font-size: 20px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.sign:hover{
+  color: #27aae1;
+}
+
+.sign a{
+  color: #27aae1;
+  text-decoration: none;
+}
+
+.sign a:hover{
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
